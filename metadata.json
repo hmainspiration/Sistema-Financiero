@@ -1,0 +1,5 @@
+{
+  "name": "New Sistema de Finanzas 1.9.9",
+  "description": "A comprehensive web application for managing church finances, including members, donations, weekly records, and monthly reports, with data persistence and Supabase integration.",
+  "requestFramePermissions": []
+}
