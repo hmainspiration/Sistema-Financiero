@@ -16,7 +16,7 @@ export default async function handler(request, response) {
 
   try {
     // Despertar Finanzas
-    await supabaseFinanzas.from('miembros').select('id').limit(1);
+    await supabaseFinanzas.from('categories').select('id').limit(1);
     
     // Despertar Estadistica (cambia 'tu_tabla_estadistica' por una real)
     await supabaseEstadistica.from('registro_censo').select('id').limit(1);
@@ -26,3 +26,4 @@ export default async function handler(request, response) {
     return response.status(500).json({ error: error.message });
   }
 }
+
